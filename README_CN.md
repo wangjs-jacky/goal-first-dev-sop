@@ -9,9 +9,25 @@ confirmed_at: null
 
 # 从自建代理开始，验证一套目标优先的 SOP
 
-[English](README.md) · [问题模板](problem-template.md) · [Agent 流程约定](AGENTS.md)
+[English](README.md) · [问题模板](templates/problem.template.md) · [Agent 流程约定](AGENTS.md)
 
 当前为 v0.1 草案。先完成一个真实案例，再修订正式 SOP；暂不开发可视化界面、不接入 Obsidian、不展开每项任务文件。
+
+## 目录约定
+
+```text
+templates/
+  problem.template.md    # 可复制填写的空白模板
+prompts/
+  problem.prompt.md      # 问题澄清入口
+  t01.prompt.md          # T01 独立执行 Prompt
+  …
+  t10.prompt.md
+AGENTS.md                # 流程约定
+README_CN.md             # 当前案例、任务状态与 Prompt 索引
+```
+
+模板按 `xxx.template.md` 命名，Prompt 按 `xxx.prompt.md` 命名。新增内容归入对应目录；Prompt 文件不重复维护任务状态。
 
 ## 已表达的目标
 
@@ -55,67 +71,18 @@ Qv2ray 是本次学习入口；客户端、代理核心、服务端与 VPN 并�
 
 ## 独立 Agent 的任务 Prompt
 
-使用方法：让独立 Agent 先获得此仓库的本地克隆，打开仓库后复制对应代码块。每个 Prompt 均以仓库根目录为相对路径基准。只在任务实际启动时生成 `results/Txx.md`；前置结果未通过时先停止并报告缺口。结果按 AGENTS.md 记录证据和状态事件，不能把“文档已写”当作运行成功。
+Prompt 统一存放在 `prompts/`，命名为 `xxx.prompt.md`。让独立 Agent 先打开本仓库，再复制对应文件中的代码块；Prompt 中路径均以仓库根目录为基准。只在任务启动时生成结果文件，任务状态仍以本页任务表为唯一来源。
 
-### T01 · 调研
-
-```text
-阅读 AGENTS.md 和 README_CN.md，执行 T01，服务于 G1/G2。先确认朋友方案的脱敏资料路径；资料未提供时只列必要补充项，不猜测架构。按需读取资料，识别客户端、代理核心、服务端、协议、DNS/路由及部署步骤，并核验相关项目当前维护和兼容情况，附来源与核验日期。交付 results/T01.md，区分事实、假设、缺口和下一步建议。验收：链路能依据来源解释、关键缺口明确；不购买或部署服务。
-```
-
-### T02 · 方案与服务器选型
-
-```text
-阅读 AGENTS.md、README_CN.md 与已通过验收的 results/T01.md，执行 T02，服务于 G1。补齐设备、预算和地区限制，给出足够决策的服务器候选与最小组件方案，核实价格和兼容性并附来源。交付 results/T02.md，记录用户选择、费用、风险和替代方案。用户尚未选择时保持 review，不代购；验收是用户能据此决定实际采用的方案。
-```
-
-### T03 · 先定义验证
-
-```text
-阅读 AGENTS.md、README_CN.md 和已通过的 results/T02.md，执行 T03，服务于 G1/G2。为选定方案列验收清单：目标、设备/环境、具体网站或应用入口、权限引用、操作步骤、预期结果、证据和失败判定。包含连接、出口、目标访问、重连及用户讲解/排错。交付 results/T03.md；用户确认后才能作为验收基线，不虚构已执行结果。
-```
-
-### T04 · 购买并连接服务器
-
-```text
-阅读 AGENTS.md、README_CN.md 与已通过的 results/T02.md、results/T03.md，执行 T04，服务于 G1。按已选规格指导用户完成服务器购买；付款由用户完成，配置只引用秘密管理器中的凭据。经授权验证实例规格和管理登录。交付 results/T04.md，记录实际费用、续费/取消入口、登录验证证据及下一步所需信息。未付款、无权限或登录失败时标明阻塞，不宣称已拥有可用服务器。
-```
-
-### T05 · 初始化
-
-```text
-阅读 AGENTS.md、README_CN.md 和已通过的 results/T04.md，按需查阅 results/T02.md 的方案，执行 T05，服务于 G1/G2。在授权服务器上完成所需更新、管理认证和防火墙配置；修改远程入口前准备恢复方式并验证新入口可用。交付 results/T05.md，包含实际改动、原因、验证证据和恢复办法。验收：管理连接可重复建立，必要端口与权限符合方案；缺少授权或恢复条件时停止。
-```
-
-### T06 · 最小 POC
-
-```text
-阅读 AGENTS.md、README_CN.md 及已通过的 results/T02.md、results/T03.md、results/T05.md，执行 T06，服务于 G1。只实现选定方案的最小服务端和单设备客户端链路，按照验收基线验证连接与目标访问。交付 results/T06.md，记录版本、配置引用、步骤与脱敏证据。失败保留原因并返回规划，不未经讨论改成另一套架构；秘密不得写入 Git。
-```
-
-### T07 · 功能验证
-
-```text
-阅读 AGENTS.md、README_CN.md、results/T03.md 与已通过的 results/T06.md，执行 T07，服务于 G1。逐项实际执行验收，记录预期与实际结果、时间、环境和证据；没有运行条件的项目标为未验证。交付 results/T07.md，说明通过项、失败项与原因；失败时提出修复任务或重规划建议，不伪造通过、不直接扩张实施范围。
-```
-
-### T08 · 可持续使用
-
-```text
-阅读 AGENTS.md、README_CN.md 和已通过的 results/T07.md，按需读取 results/T05.md、results/T06.md，执行 T08，服务于 G1/G2。先明确当前方案必需的重启恢复、维护与排错验收，再完成对应配置和验证。交付 results/T08.md，记录恢复测试、查看状态/日志的方法、更新与回退步骤。重启等影响使用的动作须在现有授权范围内；不能验证的项如实标记。
-```
-
-### T09 · 学习验收与指南
-
-```text
-阅读 AGENTS.md、README_CN.md 和已通过的 results/T08.md，按需引用 results/T01.md、results/T06.md，执行 T09，服务于 G2。请用户用自己的话讲解应用到目标站点的完整链路和各组件职责，并按 T03 基线完成基础排错。记录用户真实回答、卡点和反馈，不能替用户回答后判定掌握。交付 results/T09.md 和 guides/beginner.md；指南依据已验证步骤编写，附原因、预期结果和常见失败处理。
-```
-
-### T10 · 复盘与正式版
-
-```text
-阅读 AGENTS.md、README_CN.md、results/T03.md 与已通过的 results/T09.md，按需读取其他结果证据，执行 T10，服务于 G1/G2。逐项目标核对实际验收与用户反馈，总结哪些问题应提前问、任务粒度是否合适、上下文是否足够，并提出 SOP 修订。交付 results/T10.md；只有目标验收完成、遗留问题明确且用户认可后才将规范标为 v1.0。提供 Obsidian 迁移映射，本任务不直接写入 Obsidian。
-```
+- [T01 · 调研](prompts/t01.prompt.md)
+- [T02 · 方案与服务器选型](prompts/t02.prompt.md)
+- [T03 · 先定义验证](prompts/t03.prompt.md)
+- [T04 · 购买并连接服务器](prompts/t04.prompt.md)
+- [T05 · 初始化](prompts/t05.prompt.md)
+- [T06 · 最小 POC](prompts/t06.prompt.md)
+- [T07 · 功能验证](prompts/t07.prompt.md)
+- [T08 · 可持续使用](prompts/t08.prompt.md)
+- [T09 · 学习验收与指南](prompts/t09.prompt.md)
+- [T10 · 复盘与正式版](prompts/t10.prompt.md)
 
 ## 状态事件与决策记录
 
