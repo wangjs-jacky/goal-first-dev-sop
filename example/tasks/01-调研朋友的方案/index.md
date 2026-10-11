@@ -1,5 +1,5 @@
 ---
-status: running
+status: review
 ---
 
 # 01 · 调研朋友的方案
@@ -12,15 +12,17 @@ status: running
 
 ## 当前进度
 
-已开始公开项目调研与实际部署的只读核对。
+公开资料与面板配置已核对，核心流程和两个 POC 建议已形成，待用户验收。SSH 主机检查与端到端连通尚未验证；02 未开始。
 
 ## 产物
 
-[阶段调研结果](result.md) · [追问与回答](FAQ.md)
+[调研结果](result.md) · [资料来源](REFERENCES.md) · [脱敏证据](evidence/20261012-panel-readonly.md) · [追问与回答](FAQ.md)
 
 资料、证据和多次尝试按实际需要归入 `notes/`、`evidence/`、`attempts/`。
 
 ## 进展与反馈
+
+- 2026-10-12 · 调研 AI：完成面板 API 只读核对，确认配置为 VLESS/WS/TLS；面板报告 Xray 26.2.6。纠正早期流量图，补齐证据、来源和 POC 建议，running → review。未改服务或执行下一项任务。
 
 - 2026-10-12 · 调研 AI：用户明确“开启调研”，pending → running。本轮研究公开项目并只读核对朋友部署，不购买、不安装、不修改配置。
 
