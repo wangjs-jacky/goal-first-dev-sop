@@ -10,7 +10,9 @@
 
 ## 使用方式
 
-开启需求 → 复制 templates 到需求目录 → 用户填写并提交 → AI 整理大步骤 → 选择一个 Task 执行 → 结果与反馈存回该 Task → 调整下一步。
+开启需求 → 复制模板并填写 → AI 整理为 problem.md、保存附件并归档填写稿 → 整理大步骤 → 选择一个 Task 执行 → 结果与反馈存回该 Task → 调整下一步。
+
+本例正式需求见 [example/problem.md](example/problem.md)，其中包含朋友面板截图。填写稿不再作为当前入口，但保存在 example/archive/intake/ 供追溯初始表达。
 
 每个 Task 都有目标和完整 Prompt。当前状态以 Task 目录内 README 的 YAML 为准；不需要用户手动管理元数据。结果、笔记、证据与尝试都留在对应 Task 下，按需生成。
 

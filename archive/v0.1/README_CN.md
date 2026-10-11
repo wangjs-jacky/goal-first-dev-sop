@@ -29,9 +29,9 @@ README_CN.md             # 当前案例、任务状态与 Prompt 索引
 
 ## 本次测试怎么开始
 
-需求模板包含 8 个简短问题，每个问题下方单独留出多行空白，不要求全部填写。[example/problem.template.md](../../example/problem.template.md) 已按用户提供的 Qv2ray 需求代填初稿，直接修改这份副本即可，保留母版不动。
+需求模板包含 8 个简短问题，每个问题下方单独留出多行空白，不要求全部填写。[example/problem.md](../../example/problem.md) 已按用户提供的 Qv2ray 需求代填初稿，直接修改这份副本即可，保留母版不动。
 
-填写并保存后，告诉 AI：**「example 的需求已提好，请读取 example/problem.template.md 并开始处理。」** AI 会重新读取本地文件，必要时补问，再根据目标生成 Task。当前代填初稿等待用户修改，尚未提交需求或生成新 Task。
+填写并保存后，告诉 AI：**「example 的需求已提好，请读取 example/problem.md 并开始处理。」** AI 会重新读取本地文件，必要时补问，再根据目标生成 Task。当前代填初稿等待用户修改，尚未提交需求或生成新 Task。
 
 下面的自建代理案例与任务仍是之前的参考草案，不自动作为 `example/` 的需求。
 

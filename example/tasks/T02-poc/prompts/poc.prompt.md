@@ -3,7 +3,7 @@
 复制下面整段给已打开本仓库的独立 AI。
 
 ```text
-执行 example 的 T02 POC。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.template.md、example/README.md、example/tasks/T02-poc/README.md，以及 example/tasks/T01-research/result.md。前置结果缺失或不足以选择验证方向时，报告缺口，先返回 T01。存在本任务 result.md 时接着已有进度做。
+执行 example 的 T02 POC。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/README.md、example/tasks/T02-poc/README.md，以及 example/tasks/T01-research/result.md。前置结果缺失或不足以选择验证方向时，报告缺口，先返回 T01。存在本任务 result.md 时接着已有进度做。
 
 目标：验证调研中真正不确定的关键环节，选出可行的搭建路线。不要重新设计一套复杂方案，也不要默认要做固定数量的 POC。
 

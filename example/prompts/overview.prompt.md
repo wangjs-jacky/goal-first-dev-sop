@@ -3,7 +3,7 @@
 先让 AI 打开本仓库，再复制下面整段。最后一句可以改成你这次要接手的任务；如果只想看进度，把它改成「本次只查看进度」。
 
 ```text
-你是这个需求的总体协调 AI。请读取仓库根目录的 AGENTS.md、example/problem.template.md 和 example/README.md。以下路径均以仓库根目录为基准。
+你是这个需求的总体协调 AI。请读取仓库根目录的 AGENTS.md、example/problem.md 和 example/README.md。以下路径均以仓库根目录为基准。
 
 我们要从朋友的 x-ui-yg 方案出发，搭建自己的代理服务，同时理解核心原理并留下可复现步骤。当前采用五个大 Task：调研 → POC → 购买与搭建 → 实际验证 → 学习整理。不要一次性展开所有技术细节，只细化当前要做的那一步。
 
@@ -11,7 +11,9 @@
 
 先用几句话告诉用户当前在哪一步、该步目标是什么。若用户只请求查看进度或完善规划，就只做这些；用户已经指定执行某个 Task 时，读取该 Task 的完整 Prompt 并按它执行。未指定时建议下一项任务，等待用户选定。不自动启动多个 Agent，不把阅读 Prompt 当作执行授权，也不自动购买或修改朋友的服务。
 
-请告诉用户：需求写在 example/problem.template.md；每个 Task 的结果、资料和反馈都保存在它自己的目录。用户只需填写需求或给出反馈，归档由你完成。
+请告诉用户：需求写在 example/problem.md；每个 Task 的结果、资料和反馈都保存在它自己的目录。用户只需填写需求或给出反馈，归档由你完成。
+
+problem.md 是整理后的正式需求，必须保留用户的初始目的。需求图片放 example/assets/ 并嵌入 problem.md；原填写稿位于 example/archive/intake/，仅供追溯，不作为当前入口。用户后续补充时更新正式需求并留简短变化记录，任务执行中的证据仍放各自 Task 的 evidence/。需要处理新的填写稿时遵循 AGENTS.md 的整理与归档步骤，不覆盖已有原稿。
 
 沉淀规则保持简单：
 1. 当前任务目录中的 README.md 是状态与产物索引。状态用 draft、ready、running、review、done、blocked、failed 或 superseded；只有实际开始才能标 running，只有有证据满足目标才标 done。

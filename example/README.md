@@ -4,7 +4,7 @@
 
 总目标：搭建自己可使用的代理服务；理解核心原理，能排错、能复现。
 
-需求原文：[problem.template.md](problem.template.md) · 总览提示词：[overview.prompt.md](prompts/overview.prompt.md)
+正式需求：[problem.md](problem.md) · 总览提示词：[overview.prompt.md](prompts/overview.prompt.md)
 
 ```text
 ┌────────────────────────────────────┐
@@ -60,7 +60,9 @@
 
 ```text
 example/
-  problem.template.md          你的需求
+  problem.md                   初始目的与整理后的需求
+  assets/                      需求图片等附件
+  archive/intake/              原填写稿（保留追溯）
   README.md                    总流程与任务入口
   prompts/overview.prompt.md   总览与归档提示词
   tasks/T01-research/          每个 Task 都使用同样的结构
@@ -75,6 +77,8 @@ example/
 只保存实际产生的内容，不预先创建一堆空文件。尝试记录使用 `YYYYMMDD-HHMM-简短说明.md`；已有同名文件就增加序号，不覆盖。`result.md` 可以更新当前结论，旧尝试和失败证据保留。其他 Task 引用前置结果路径，不复制全部上下文。
 
 凭据不进 Git。资料只归属到一个 Task，其他地方用链接。全流程的最终指南也放在 T05 目录内；当前不写入 Obsidian。
+
+需求阶段的图片等附件归 `assets/`，嵌入 `problem.md`；任务执行产生的图片和记录才归对应 Task。原填写稿已移至 [archive/intake/problem.template.md](archive/intake/problem.template.md)，便于追溯，但后续统一读取正式需求。
 
 ## 版本说明
 
