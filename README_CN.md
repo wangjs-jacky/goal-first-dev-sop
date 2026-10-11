@@ -18,6 +18,8 @@ confirmed_at: null
 ```text
 templates/
   problem.template.md    # 可复制填写的空白模板
+example/
+  problem.template.md    # 本次测试的填写副本
 prompts/
   problem.prompt.md      # 问题澄清入口
   t01.prompt.md          # T01 独立执行 Prompt
@@ -28,6 +30,14 @@ README_CN.md             # 当前案例、任务状态与 Prompt 索引
 ```
 
 模板按 `xxx.template.md` 命名，Prompt 按 `xxx.prompt.md` 命名。新增内容归入对应目录；Prompt 文件不重复维护任务状态。
+
+## 本次测试怎么开始
+
+`templates/` 的内容已复制到 `example/`，当前只有一份问题模板。直接编辑 [example/problem.template.md](example/problem.template.md)，保留母版不动。
+
+填写并保存后，告诉 AI：**「example 的需求已提好，请读取 example/problem.template.md 并开始处理。」** AI 会重新读取本地文件，必要时补问，再根据目标生成 Task。本次只初始化空白副本，尚未提交需求或生成新 Task。
+
+下面的自建代理案例与任务仍是之前的参考草案，不自动作为 `example/` 的需求。
 
 ## 已表达的目标
 
