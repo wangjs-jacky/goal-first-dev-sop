@@ -5,7 +5,7 @@
 - [填写模板](templates/problem.template.md)：8 个简短问题，每题有提示与空白区域。
 - [通用问题接收 Prompt](prompts/problem.prompt.md)：用户提交需求后，再读取文件并处理。
 - [example 五步流程](example/index.md)：当前案例、线框流程图、任务入口与归档方式。
-- [总览 Prompt](example/prompts/overview.prompt.md)：交给总体协调 AI，查看进度、接收任务、沉淀结果。
+- [全局初始 Prompt](prompt.md)：直接复制给 AI，开启需求、接收任务、查看进度和沉淀结果。
 - [AGENTS.md](AGENTS.md)：统一工作约定。
 
 ## 使用方式

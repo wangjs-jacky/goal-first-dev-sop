@@ -4,7 +4,7 @@
 
 总目标：搭建自己可使用的代理服务；理解核心原理，能排错、能复现。
 
-正式需求：[problem.md](problem.md) · 总览提示词：[overview.prompt.md](prompts/overview.prompt.md)
+正式需求：[problem.md](problem.md) · 全局初始提示词：[prompt.md](../prompt.md)
 
 ```text
 ┌────────────────────────────────────┐
@@ -44,7 +44,7 @@
 
 ## 从哪里开始
 
-把 [总览 Prompt](prompts/overview.prompt.md) 的代码块复制给能访问本仓库的 AI，告诉它这次要做哪个 Task。也可以直接使用下面某一项任务的 Prompt。每次先做一项；目前最先接手的是 01 调研，不代表已经开始调研。
+把根目录 [prompt.md](../prompt.md) 的代码块复制给能访问本仓库的 AI，告诉它这次要做哪个 Task。也可以直接使用下面某一项任务的 Prompt。每次先做一项；目前最先接手的是 01 调研，不代表已经开始调研。
 
 | Task | 任务记录与当前状态 | 完整 Prompt |
 |---|---|---|
@@ -64,7 +64,6 @@ example/
   assets/                      需求图片等附件
   archive/intake/              原填写稿（保留追溯）
   index.md                     总流程与任务入口
-  prompts/overview.prompt.md   总览与归档提示词
   tasks/01-调研朋友的方案/                    每个 Task 都使用同样的结构
     index.md                   目标、状态、产物链接、简短记录
     prompts/research.prompt.md 可直接交给独立 AI 的完整指令
@@ -75,6 +74,8 @@ example/
 ```
 
 只保存实际产生的内容，不预先创建一堆空文件。尝试记录使用 `YYYYMMDD-HHMM-简短说明.md`；已有同名文件就增加序号，不覆盖。`result.md` 可以更新当前结论，旧尝试和失败证据保留。其他 Task 引用前置结果路径，不复制全部上下文。
+
+全局初始提示词统一在仓库根目录 `prompt.md`，不在 example 下重复保存。
 
 凭据不进 Git。资料只归属到一个 Task，其他地方用链接。全流程的最终指南也放在 05 目录内；当前不写入 Obsidian。
 

@@ -1,6 +1,6 @@
 # 目标优先的开发 / 学习 SOP
 
-用户当次指令优先。当前入口是 example/index.md 与 example/prompts/overview.prompt.md；archive/v0.1 为旧十步初稿，不用于执行。规范仍待真实案例验证，不把文档完成当作项目完成。
+用户当次指令优先。全局初始提示词统一为仓库根目录 prompt.md，可直接复制；当前需求入口是 example/index.md。archive/v0.1 为旧十步初稿，不用于执行。规范仍待真实案例验证，不把文档完成当作项目完成。
 
 ## 需求接收
 
@@ -27,7 +27,7 @@
 
 - 空白模板放 templates/，使用 xxx.template.md。
 - 填写稿是临时入口；正式需求统一为需求目录的 problem.md，需求附件放 assets/，原填写稿归 archive/intake/。Task 只引用正式需求。
-- 通用 Prompt 放根 prompts/；需求总览 Prompt 放需求目录的 prompts/；任务 Prompt 放对应 Task 的 prompts/，都使用 xxx.prompt.md。
+- 全局初始与总览提示词仅维护根目录 prompt.md；不再在需求目录重复维护总览 Prompt。专项 Prompt 放根 prompts/，任务 Prompt 放对应 Task 的 prompts/，专项及任务文件使用 xxx.prompt.md。
 - 当前任务位于 example/tasks/01-调研朋友的方案 至 example/tasks/05-理解原理并整理步骤，入口见 example/index.md。
 - 每个 Task 的 index.md 保存目标、唯一当前状态、产物链接和简短进展记录。总览只链接任务，不重复维护状态。
 - 执行后在当前 Task 下生成 result.md，写结论、依据、未解决问题、反馈和下一步。实操结果注明环境、步骤、预期/实际结果及证据。资料放 notes/，证据放 evidence/，尝试放 attempts/；按需创建，不预建空结果。
