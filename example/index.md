@@ -48,11 +48,11 @@
 
 | Task | 任务记录与当前状态 | 完整 Prompt |
 |---|---|---|
-| 01 调研 | [任务目录](tasks/01/index.md) | [复制 Prompt](tasks/01/prompts/research.prompt.md) |
-| 02 POC | [任务目录](tasks/02/index.md) | [复制 Prompt](tasks/02/prompts/poc.prompt.md) |
-| 03 搭建 | [任务目录](tasks/03/index.md) | [复制 Prompt](tasks/03/prompts/deploy.prompt.md) |
-| 04 验证 | [任务目录](tasks/04/index.md) | [复制 Prompt](tasks/04/prompts/validation.prompt.md) |
-| 05 学习整理 | [任务目录](tasks/05/index.md) | [复制 Prompt](tasks/05/prompts/learning.prompt.md) |
+| 01 调研 | [任务目录](tasks/01-调研朋友的方案/index.md) | [复制 Prompt](tasks/01-调研朋友的方案/prompts/research.prompt.md) |
+| 02 POC | [任务目录](tasks/02-POC验证/index.md) | [复制 Prompt](tasks/02-POC验证/prompts/poc.prompt.md) |
+| 03 搭建 | [任务目录](tasks/03-购买服务器并搭建/index.md) | [复制 Prompt](tasks/03-购买服务器并搭建/prompts/deploy.prompt.md) |
+| 04 验证 | [任务目录](tasks/04-验证实际使用/index.md) | [复制 Prompt](tasks/04-验证实际使用/prompts/validation.prompt.md) |
+| 05 学习整理 | [任务目录](tasks/05-理解原理并整理步骤/index.md) | [复制 Prompt](tasks/05-理解原理并整理步骤/prompts/learning.prompt.md) |
 
 ## 文件怎么沉淀
 
@@ -65,7 +65,7 @@ example/
   archive/intake/              原填写稿（保留追溯）
   index.md                     总流程与任务入口
   prompts/overview.prompt.md   总览与归档提示词
-  tasks/01/                    每个 Task 都使用同样的结构
+  tasks/01-调研朋友的方案/                    每个 Task 都使用同样的结构
     index.md                   目标、状态、产物链接、简短记录
     prompts/research.prompt.md 可直接交给独立 AI 的完整指令
     result.md                  当前结果和下一步交接（执行后生成）

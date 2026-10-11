@@ -23,16 +23,16 @@
 
 ## 文件归档
 
-需求目录及每个任务目录统一用 index.md 做入口，在其中链接需求、Prompt、结果等具体内容。任务目录与 ID 使用两位数字 01、02、03 等，不加 T 或英文名称；YAML 中编号用字符串（例如 id: "01"）。根 README 仅用于 GitHub 项目展示。
+需求目录及每个任务目录统一用 index.md 做入口，在其中链接需求、Prompt、结果等具体内容。任务目录使用「两位编号-具体内容」，例如 01-调研朋友的方案，不加 T 前缀；ID 仍使用两位数字。YAML 中编号用字符串（例如 id: "01"）。根 README 仅用于 GitHub 项目展示。
 
 - 空白模板放 templates/，使用 xxx.template.md。
 - 填写稿是临时入口；正式需求统一为需求目录的 problem.md，需求附件放 assets/，原填写稿归 archive/intake/。Task 只引用正式需求。
 - 通用 Prompt 放根 prompts/；需求总览 Prompt 放需求目录的 prompts/；任务 Prompt 放对应 Task 的 prompts/，都使用 xxx.prompt.md。
-- 当前任务位于 example/tasks/01 至 05，入口见 example/index.md。
+- 当前任务位于 example/tasks/01-调研朋友的方案 至 example/tasks/05-理解原理并整理步骤，入口见 example/index.md。
 - 每个 Task 的 index.md 保存目标、唯一当前状态、产物链接和简短进展记录。总览只链接任务，不重复维护状态。
 - 执行后在当前 Task 下生成 result.md，写结论、依据、未解决问题、反馈和下一步。实操结果注明环境、步骤、预期/实际结果及证据。资料放 notes/，证据放 evidence/，尝试放 attempts/；按需创建，不预建空结果。
 - 尝试记录用 YYYYMMDD-HHMM-简短说明.md，同名加序号。更新当前结论时保留旧尝试和失败证据。跨任务只链接需要的文件，不复制全部上下文。
-- 后续细分工作也沉淀在所属 Task 的子目录，入口补链接。最终指南放 05/guide.md。不要再使用全局 results/ 或 guides/ 保存本例成果。
+- 后续细分工作也沉淀在所属 Task 的子目录，入口补链接。最终指南放 05-理解原理并整理步骤/guide.md。不要再使用全局 results/ 或 guides/ 保存本例成果。
 - 执行 Prompt 内路径相对于仓库根目录；Markdown 导航链接相对于当前文件。凭据、私钥和完整认证配置不写入 Git，文件只留私密获取方式。
 
 ## 状态与反馈

@@ -3,7 +3,7 @@
 复制下面整段给已打开本仓库的独立 AI。
 
 ```text
-执行 example 的 02 POC。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/index.md、example/tasks/02/index.md，以及 example/tasks/01/result.md。前置结果缺失或不足以选择验证方向时，报告缺口，先返回 01。存在本任务 result.md 时接着已有进度做。
+执行 example 的 02 POC。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/index.md、example/tasks/02-POC验证/index.md，以及 example/tasks/01-调研朋友的方案/result.md。前置结果缺失或不足以选择验证方向时，报告缺口，先返回 01。存在本任务 result.md 时接着已有进度做。
 
 目标：验证调研中真正不确定的关键环节，选出可行的搭建路线。不要重新设计一套复杂方案，也不要默认要做固定数量的 POC。
 
@@ -11,7 +11,7 @@
 
 如果某项验证必须等有了自己的服务器才能完成，把它列为 03 的首个检查项，明确路线仍是有条件可行，不冒充已实测通过。前置资料已有充分证据的环节可直接引用，并记录无需重复验证的理由。失败则记下原因和下一种小范围尝试；全部候选失败时回到 01 调整路线。
 
-将成果保存在 example/tasks/02/：每次 POC 在 attempts/YYYYMMDD-HHMM-简短说明.md 记录输入环境、步骤、预期和实际结果，同名加序号；证据放 evidence/。result.md 汇总已验证/未验证项、推荐路线及理由、部署前必须解决的条件。在 index.md 更新状态、产物索引，追加时间、执行者、状态变化与反馈。保留失败尝试，凭据不进 Git。
+将成果保存在 example/tasks/02-POC验证/：每次 POC 在 attempts/YYYYMMDD-HHMM-简短说明.md 记录输入环境、步骤、预期和实际结果，同名加序号；证据放 evidence/。result.md 汇总已验证/未验证项、推荐路线及理由、部署前必须解决的条件。在 index.md 更新状态、产物索引，追加时间、执行者、状态变化与反馈。保留失败尝试，凭据不进 Git。
 
 完成标准：关键疑点有证据支持结论，用户能选择接下来采用的路线；未完成的部署依赖清楚列出并由用户接受后才交接 03，不把待验证项写成通过。结束时报告结果路径和下一步建议，不代购、不自动继续部署。
 ```
