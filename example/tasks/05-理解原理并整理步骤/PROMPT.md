@@ -3,7 +3,7 @@
 复制下面整段给已打开本仓库的独立 AI。
 
 ```text
-执行 example 的 05 学习整理。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/index.md、example/tasks/05-理解原理并整理步骤/index.md 和 example/tasks/04-验证实际使用/result.md。按需要引用 01 的原理说明、03 的实际步骤与各 Task 中的失败记录，不一次读取所有材料。若系统还有关键问题未解决，先说明它如何影响学习与复现。
+执行 example 的 05 学习整理。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/AGENTS.md、example/tasks/05-理解原理并整理步骤/index.md 和 example/tasks/04-验证实际使用/result.md。按需要引用 01 的原理说明、03 的实际步骤与各 Task 中的失败记录，不一次读取所有材料。若系统还有关键问题未解决，先说明它如何影响学习与复现。
 
 目标：用户能解释核心链路、做基本排错，并依据指南重新搭建；同时得到一份基于真实操作的新手指南。
 

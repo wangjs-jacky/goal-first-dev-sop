@@ -67,7 +67,7 @@ example/
   problem.md                   初始目的与整理后的需求
   assets/                      需求图片等附件
   archive/intake/              原填写稿（保留追溯）
-  index.md                     总流程与任务入口
+  AGENTS.md                    总流程与任务入口
   tasks/01-调研朋友的方案/                    每个 Task 都使用同样的结构
     index.md                   目标、状态、产物链接、简短记录
     PROMPT.md                  可直接交给独立 AI 的完整指令

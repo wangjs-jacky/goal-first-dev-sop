@@ -3,7 +3,7 @@
 复制下面整段给已打开本仓库的独立 AI。
 
 ```text
-执行 example 的 04 使用验证。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/index.md、example/tasks/04-验证实际使用/index.md 与 example/tasks/03-购买服务器并搭建/result.md。有本任务结果时先读，避免重复验证。部署尚未完成时返回 03 处理缺口。
+执行 example 的 04 使用验证。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/AGENTS.md、example/tasks/04-验证实际使用/index.md 与 example/tasks/03-购买服务器并搭建/result.md。有本任务结果时先读，避免重复验证。部署尚未完成时返回 03 处理缺口。
 
 目标：确认服务在用户的目标设备上满足实际使用需求，而不只是显示“连接成功”。
 

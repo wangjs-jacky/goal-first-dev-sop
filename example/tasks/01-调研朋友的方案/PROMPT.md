@@ -3,7 +3,7 @@
 复制下面整段给已打开本仓库的独立 AI。
 
 ```text
-执行 example 的 01 调研。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/index.md 和 example/tasks/01-调研朋友的方案/index.md；有该任务 result.md 时先读取，接着已有进度做，不重复调研。
+执行 example 的 01 调研。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/AGENTS.md 和 example/tasks/01-调研朋友的方案/index.md；有该任务 result.md 时先读取，接着已有进度做，不重复调研。
 
 目标：弄清朋友的服务如何工作，形成能看懂的核心流程、组件职责和待验证问题，为下一步 POC 提供依据。Qv2ray 是学习入口，不预先认定它必须作为最终客户端。
 

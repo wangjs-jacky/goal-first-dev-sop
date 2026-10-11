@@ -3,7 +3,7 @@
 复制下面整段给已打开本仓库的独立 AI。
 
 ```text
-执行 example 的 03 搭建。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/index.md、example/tasks/03-购买服务器并搭建/index.md 和 example/tasks/02-POC验证/result.md，必要时引用 01 的结果。有本任务 result.md 时先读取，避免重复购买或部署。
+执行 example 的 03 搭建。所有路径以仓库根目录为基准。先读取 AGENTS.md、example/problem.md、example/AGENTS.md、example/tasks/03-购买服务器并搭建/index.md 和 example/tasks/02-POC验证/result.md，必要时引用 01 的结果。有本任务 result.md 时先读取，避免重复购买或部署。
 
 目标：在属于用户自己的服务器上部署选定服务，并从目标设备完成第一次连接。前置路线未选定时先解决选型，不猜测预算或协议。
 
