@@ -48,25 +48,25 @@
 
 | Task | 任务记录与当前状态 | 完整 Prompt |
 |---|---|---|
-| 01 调研 | [任务目录](tasks/T01-research/README.md) | [复制 Prompt](tasks/T01-research/prompts/research.prompt.md) |
-| 02 POC | [任务目录](tasks/T02-poc/README.md) | [复制 Prompt](tasks/T02-poc/prompts/poc.prompt.md) |
-| 03 搭建 | [任务目录](tasks/T03-deploy/README.md) | [复制 Prompt](tasks/T03-deploy/prompts/deploy.prompt.md) |
-| 04 验证 | [任务目录](tasks/T04-validation/README.md) | [复制 Prompt](tasks/T04-validation/prompts/validation.prompt.md) |
-| 05 学习整理 | [任务目录](tasks/T05-learning/README.md) | [复制 Prompt](tasks/T05-learning/prompts/learning.prompt.md) |
+| 01 调研 | [任务目录](tasks/01/index.md) | [复制 Prompt](tasks/01/prompts/research.prompt.md) |
+| 02 POC | [任务目录](tasks/02/index.md) | [复制 Prompt](tasks/02/prompts/poc.prompt.md) |
+| 03 搭建 | [任务目录](tasks/03/index.md) | [复制 Prompt](tasks/03/prompts/deploy.prompt.md) |
+| 04 验证 | [任务目录](tasks/04/index.md) | [复制 Prompt](tasks/04/prompts/validation.prompt.md) |
+| 05 学习整理 | [任务目录](tasks/05/index.md) | [复制 Prompt](tasks/05/prompts/learning.prompt.md) |
 
 ## 文件怎么沉淀
 
-你只需修改需求或给出反馈；由 AI 把执行中产生的内容放回对应 Task。每个 Task 的 README 是该任务状态和产物链接的唯一入口，总览不重复维护状态。
+你只需修改需求或给出反馈；由 AI 把执行中产生的内容放回对应 Task。每个 Task 的 index.md 是该任务状态和产物链接的唯一入口，总览不重复维护状态。
 
 ```text
 example/
   problem.md                   初始目的与整理后的需求
   assets/                      需求图片等附件
   archive/intake/              原填写稿（保留追溯）
-  README.md                    总流程与任务入口
+  index.md                     总流程与任务入口
   prompts/overview.prompt.md   总览与归档提示词
-  tasks/T01-research/          每个 Task 都使用同样的结构
-    README.md                  目标、状态、产物链接、简短记录
+  tasks/01/                    每个 Task 都使用同样的结构
+    index.md                   目标、状态、产物链接、简短记录
     prompts/research.prompt.md 可直接交给独立 AI 的完整指令
     result.md                  当前结果和下一步交接（执行后生成）
     notes/                     调研材料、学习笔记（按需创建）
@@ -76,7 +76,7 @@ example/
 
 只保存实际产生的内容，不预先创建一堆空文件。尝试记录使用 `YYYYMMDD-HHMM-简短说明.md`；已有同名文件就增加序号，不覆盖。`result.md` 可以更新当前结论，旧尝试和失败证据保留。其他 Task 引用前置结果路径，不复制全部上下文。
 
-凭据不进 Git。资料只归属到一个 Task，其他地方用链接。全流程的最终指南也放在 T05 目录内；当前不写入 Obsidian。
+凭据不进 Git。资料只归属到一个 Task，其他地方用链接。全流程的最终指南也放在 05 目录内；当前不写入 Obsidian。
 
 需求阶段的图片等附件归 `assets/`，嵌入 `problem.md`；任务执行产生的图片和记录才归对应 Task。原填写稿已移至 [archive/intake/problem.template.md](archive/intake/problem.template.md)，便于追溯，但后续统一读取正式需求。
 

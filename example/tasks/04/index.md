@@ -1,15 +1,15 @@
 ---
-id: T04
+id: "04"
 status: draft
 ---
 
-# T04 · 验证实际使用
+# 04 · 验证实际使用
 
 目标：确认目标设备的访问、重连与重启恢复符合使用需求。
 
-对应总目标：G1（G1 自己能用；G2 理解原理、能复现）。前置任务：T03。
+对应总目标：G1（G1 自己能用；G2 理解原理、能复现）。前置任务：03。
 
-[完整执行 Prompt](prompts/validation.prompt.md) · [返回总览](../../README.md)
+[完整执行 Prompt](prompts/validation.prompt.md) · [返回总览](../../index.md)
 
 ## 当前进度
 

@@ -4,7 +4,7 @@
 
 - [填写模板](templates/problem.template.md)：8 个简短问题，每题有提示与空白区域。
 - [通用问题接收 Prompt](prompts/problem.prompt.md)：用户提交需求后，再读取文件并处理。
-- [example 五步流程](example/README.md)：当前案例、线框流程图、任务入口与归档方式。
+- [example 五步流程](example/index.md)：当前案例、线框流程图、任务入口与归档方式。
 - [总览 Prompt](example/prompts/overview.prompt.md)：交给总体协调 AI，查看进度、接收任务、沉淀结果。
 - [AGENTS.md](AGENTS.md)：统一工作约定。
 
@@ -14,6 +14,6 @@
 
 本例正式需求见 [example/problem.md](example/problem.md)，其中包含朋友面板截图。填写稿不再作为当前入口，但保存在 example/archive/intake/ 供追溯初始表达。
 
-每个 Task 都有目标和完整 Prompt。当前状态以 Task 目录内 README 的 YAML 为准；不需要用户手动管理元数据。结果、笔记、证据与尝试都留在对应 Task 下，按需生成。
+每个 Task 都有目标和完整 Prompt。当前状态以 Task 目录内 index.md 的 YAML 为准；不需要用户手动管理元数据。结果、笔记、证据与尝试都留在对应 Task 下，按需生成。
 
 当前 Qv2ray 示例已根据用户反馈整理成五个 Task，但没有执行调研、POC、购买或部署。旧十步初稿已移至 [archive/v0.1](archive/v0.1/README_CN.md)，不再用于执行。

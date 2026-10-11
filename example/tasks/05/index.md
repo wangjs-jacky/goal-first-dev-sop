@@ -1,15 +1,15 @@
 ---
-id: T05
+id: "05"
 status: draft
 ---
 
-# T05 · 理解原理并整理步骤
+# 05 · 理解原理并整理步骤
 
 目标：能解释、能排错，并留下可复现的新手指南。
 
-对应总目标：G2（G1 自己能用；G2 理解原理、能复现）。前置任务：T04。
+对应总目标：G2（G1 自己能用；G2 理解原理、能复现）。前置任务：04。
 
-[完整执行 Prompt](prompts/learning.prompt.md) · [返回总览](../../README.md)
+[完整执行 Prompt](prompts/learning.prompt.md) · [返回总览](../../index.md)
 
 ## 当前进度
 

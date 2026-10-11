@@ -1,6 +1,6 @@
 # 目标优先的开发 / 学习 SOP
 
-用户当次指令优先。当前入口是 example/README.md 与 example/prompts/overview.prompt.md；archive/v0.1 为旧十步初稿，不用于执行。规范仍待真实案例验证，不把文档完成当作项目完成。
+用户当次指令优先。当前入口是 example/index.md 与 example/prompts/overview.prompt.md；archive/v0.1 为旧十步初稿，不用于执行。规范仍待真实案例验证，不把文档完成当作项目完成。
 
 ## 需求接收
 
@@ -23,21 +23,23 @@
 
 ## 文件归档
 
+需求目录及每个任务目录统一用 index.md 做入口，在其中链接需求、Prompt、结果等具体内容。任务目录与 ID 使用两位数字 01、02、03 等，不加 T 或英文名称；YAML 中编号用字符串（例如 id: "01"）。根 README 仅用于 GitHub 项目展示。
+
 - 空白模板放 templates/，使用 xxx.template.md。
 - 填写稿是临时入口；正式需求统一为需求目录的 problem.md，需求附件放 assets/，原填写稿归 archive/intake/。Task 只引用正式需求。
 - 通用 Prompt 放根 prompts/；需求总览 Prompt 放需求目录的 prompts/；任务 Prompt 放对应 Task 的 prompts/，都使用 xxx.prompt.md。
-- 当前任务位于 example/tasks/T01-research 至 T05-learning，入口见 example/README.md。
-- 每个 Task 的 README.md 保存目标、唯一当前状态、产物链接和简短进展记录。总览只链接任务，不重复维护状态。
+- 当前任务位于 example/tasks/01 至 05，入口见 example/index.md。
+- 每个 Task 的 index.md 保存目标、唯一当前状态、产物链接和简短进展记录。总览只链接任务，不重复维护状态。
 - 执行后在当前 Task 下生成 result.md，写结论、依据、未解决问题、反馈和下一步。实操结果注明环境、步骤、预期/实际结果及证据。资料放 notes/，证据放 evidence/，尝试放 attempts/；按需创建，不预建空结果。
 - 尝试记录用 YYYYMMDD-HHMM-简短说明.md，同名加序号。更新当前结论时保留旧尝试和失败证据。跨任务只链接需要的文件，不复制全部上下文。
-- 后续细分工作也沉淀在所属 Task 的子目录，入口补链接。最终指南放 T05-learning/guide.md。不要再使用全局 results/ 或 guides/ 保存本例成果。
+- 后续细分工作也沉淀在所属 Task 的子目录，入口补链接。最终指南放 05/guide.md。不要再使用全局 results/ 或 guides/ 保存本例成果。
 - 执行 Prompt 内路径相对于仓库根目录；Markdown 导航链接相对于当前文件。凭据、私钥和完整认证配置不写入 Git，文件只留私密获取方式。
 
 ## 状态与反馈
 
 状态使用 draft → ready → running → review → done；另有 blocked / failed / superseded。draft 是待细化或尚未授权启动；ready 是必要输入和边界具备；running 必须实际开始；review 是交回等待验收；done 必须有目标达成的证据。缺条件用 blocked，失败用 failed，被替代的旧任务保留为 superseded。
 
-每次重要进展或用户反馈，在 Task 的 README 追加日期、执行者、状态变化（如有）、原因及产物链接。用户学习能力须依据实际讲解、排错或复现记录判断，不能由 AI 代答后宣布掌握。
+每次重要进展或用户反馈，在 Task 的 index.md 追加日期、执行者、状态变化（如有）、原因及产物链接。用户学习能力须依据实际讲解、排错或复现记录判断，不能由 AI 代答后宣布掌握。
 
 每步完成后说明目标是否达成、结果路径与下一步建议。POC 失败保留原因后调整尝试；所有候选失败则返回调研，不覆盖历史。普通细节由 AI 处理，目标、预算或范围变化交给用户决定。
 
