@@ -79,16 +79,16 @@ Qv2ray 是本次学习入口；客户端、代理核心、服务端与 VPN 并�
 
 Prompt 统一存放在 `prompts/`，命名为 `xxx.prompt.md`。让独立 Agent 先打开本仓库，再复制对应文件中的代码块；Prompt 中路径均以仓库根目录为基准。只在任务启动时生成结果文件，任务状态仍以本页任务表为唯一来源。
 
-- [T01 · 调研](prompts/t01.prompt.md)
-- [T02 · 方案与服务器选型](prompts/t02.prompt.md)
-- [T03 · 先定义验证](prompts/t03.prompt.md)
-- [T04 · 购买并连接服务器](prompts/t04.prompt.md)
-- [T05 · 初始化](prompts/t05.prompt.md)
-- [T06 · 最小 POC](prompts/t06.prompt.md)
-- [T07 · 功能验证](prompts/t07.prompt.md)
-- [T08 · 可持续使用](prompts/t08.prompt.md)
-- [T09 · 学习验收与指南](prompts/t09.prompt.md)
-- [T10 · 复盘与正式版](prompts/t10.prompt.md)
+- [T01 · 调研](tasks/01/PROMPT.md)
+- [T02 · 方案与服务器选型](tasks/02/PROMPT.md)
+- [T03 · 先定义验证](tasks/03/PROMPT.md)
+- [T04 · 购买并连接服务器](tasks/04/PROMPT.md)
+- [T05 · 初始化](tasks/05/PROMPT.md)
+- [T06 · 最小 POC](tasks/06/PROMPT.md)
+- [T07 · 功能验证](tasks/07/PROMPT.md)
+- [T08 · 可持续使用](tasks/08/PROMPT.md)
+- [T09 · 学习验收与指南](tasks/09/PROMPT.md)
+- [T10 · 复盘与正式版](tasks/10/PROMPT.md)
 
 ## 状态事件与决策记录
 

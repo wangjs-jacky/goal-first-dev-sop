@@ -9,7 +9,7 @@ status: draft
 
 对应总目标：G2（G1 自己能用；G2 理解原理、能复现）。前置任务：04。
 
-[完整执行 Prompt](prompts/learning.prompt.md) · [返回总览](../../index.md)
+[完整执行 Prompt](PROMPT.md) · [返回总览](../../index.md)
 
 ## 当前进度
 

@@ -4,7 +4,7 @@
 
 总目标：搭建自己可使用的代理服务；理解核心原理，能排错、能复现。
 
-正式需求：[problem.md](problem.md) · 全局初始提示词：[prompt.md](../prompt.md)
+正式需求：[problem.md](problem.md) · 全局初始提示词：[PROMPT.md](../PROMPT.md)
 
 ```text
 ┌────────────────────────────────────┐
@@ -44,15 +44,15 @@
 
 ## 从哪里开始
 
-把根目录 [prompt.md](../prompt.md) 的代码块复制给能访问本仓库的 AI，告诉它这次要做哪个 Task。也可以直接使用下面某一项任务的 Prompt。每次先做一项；目前最先接手的是 01 调研，不代表已经开始调研。
+把根目录 [PROMPT.md](../PROMPT.md) 的代码块复制给能访问本仓库的 AI，告诉它这次要做哪个 Task。也可以直接使用下面某一项任务的 Prompt。每次先做一项；目前最先接手的是 01 调研，不代表已经开始调研。
 
 | Task | 任务记录与当前状态 | 完整 Prompt |
 |---|---|---|
-| 01 调研 | [任务目录](tasks/01-调研朋友的方案/index.md) | [复制 Prompt](tasks/01-调研朋友的方案/prompts/research.prompt.md) |
-| 02 POC | [任务目录](tasks/02-POC验证/index.md) | [复制 Prompt](tasks/02-POC验证/prompts/poc.prompt.md) |
-| 03 搭建 | [任务目录](tasks/03-购买服务器并搭建/index.md) | [复制 Prompt](tasks/03-购买服务器并搭建/prompts/deploy.prompt.md) |
-| 04 验证 | [任务目录](tasks/04-验证实际使用/index.md) | [复制 Prompt](tasks/04-验证实际使用/prompts/validation.prompt.md) |
-| 05 学习整理 | [任务目录](tasks/05-理解原理并整理步骤/index.md) | [复制 Prompt](tasks/05-理解原理并整理步骤/prompts/learning.prompt.md) |
+| 01 调研 | [任务目录](tasks/01-调研朋友的方案/index.md) | [复制 Prompt](tasks/01-调研朋友的方案/PROMPT.md) |
+| 02 POC | [任务目录](tasks/02-POC验证/index.md) | [复制 Prompt](tasks/02-POC验证/PROMPT.md) |
+| 03 搭建 | [任务目录](tasks/03-购买服务器并搭建/index.md) | [复制 Prompt](tasks/03-购买服务器并搭建/PROMPT.md) |
+| 04 验证 | [任务目录](tasks/04-验证实际使用/index.md) | [复制 Prompt](tasks/04-验证实际使用/PROMPT.md) |
+| 05 学习整理 | [任务目录](tasks/05-理解原理并整理步骤/index.md) | [复制 Prompt](tasks/05-理解原理并整理步骤/PROMPT.md) |
 
 ## 文件怎么沉淀
 
@@ -66,7 +66,7 @@ example/
   index.md                     总流程与任务入口
   tasks/01-调研朋友的方案/                    每个 Task 都使用同样的结构
     index.md                   目标、状态、产物链接、简短记录
-    prompts/research.prompt.md 可直接交给独立 AI 的完整指令
+    PROMPT.md                  可直接交给独立 AI 的完整指令
     result.md                  当前结果和下一步交接（执行后生成）
     notes/                     调研材料、学习笔记（按需创建）
     evidence/                  脱敏截图、日志和验证记录（按需创建）
@@ -75,7 +75,7 @@ example/
 
 只保存实际产生的内容，不预先创建一堆空文件。尝试记录使用 `YYYYMMDD-HHMM-简短说明.md`；已有同名文件就增加序号，不覆盖。`result.md` 可以更新当前结论，旧尝试和失败证据保留。其他 Task 引用前置结果路径，不复制全部上下文。
 
-全局初始提示词统一在仓库根目录 `prompt.md`，不在 example 下重复保存。
+全局初始提示词统一在仓库根目录 `PROMPT.md`，不在 example 下重复保存。
 
 凭据不进 Git。资料只归属到一个 Task，其他地方用链接。全流程的最终指南也放在 05 目录内；当前不写入 Obsidian。
 
