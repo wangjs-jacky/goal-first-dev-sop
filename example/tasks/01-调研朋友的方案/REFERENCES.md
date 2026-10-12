@@ -1,5 +1,9 @@
 # 调研资料 · 2026-10-12
 
+- 新增链路来源：[Cloudflare IP API](https://api.cloudflare.com/client/v4/ips)、[公开 trace 端点](https://www.cloudflare.com/cdn-cgi/trace)；2026-10-12 经现有本机代理读取，见 [入口/出口证据](evidence/20261012-proxy-path.md)。用途为网段归属与本次请求出口核验，不是完整配置审计。
+
+- 新增本机来源：[Mac mini 只读检查](evidence/20261012-mac-mini-readonly.md)。依据系统代理、运行进程、应用版本和生成配置白名单摘要；未进行主动连通测试。
+
 公开 GitHub 资料通过 gh CLI 读取；部署通过面板 API 核对。以下区分项目文档、上游机制与实际证据。
 
 | 来源 | 用途与核验范围 |
