@@ -1,0 +1,8 @@
+{
+  "address": "104.26.10.229",
+  "port": 443,
+  "serverName": "node.paws.rodeo",
+  "wsHost": "node.paws.rodeo",
+  "allowInsecure": false,
+  "reason": "2026-10-12: tested Cloudflare public entry; default DNS entries had intermittent WebSocket timeouts. UUID and WS path remain on the VPS, not in this profile."
+}
