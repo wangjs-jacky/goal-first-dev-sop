@@ -4,3 +4,5 @@
 *.pem
 *.key
 private/
+# 本机安装链接，另一台设备须使用其自身的 Skill 源码路径安装。
+/.agents/skills/goal-first-workflow
